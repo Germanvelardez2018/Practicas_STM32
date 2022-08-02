@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccOP6jzo.s 			page 1
+ARM GAS  /tmp/ccZM4jid.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
   29:Core/Src/main.c **** 
   30:Core/Src/main.c **** /* USER CODE END PTD */
   31:Core/Src/main.c **** 
-ARM GAS  /tmp/ccOP6jzo.s 			page 2
+ARM GAS  /tmp/ccZM4jid.s 			page 2
 
 
   32:Core/Src/main.c **** /* Private define ------------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
   86:Core/Src/main.c ****   SystemClock_Config();
   87:Core/Src/main.c **** 
   88:Core/Src/main.c ****   /* USER CODE BEGIN SysInit */
-ARM GAS  /tmp/ccOP6jzo.s 			page 3
+ARM GAS  /tmp/ccZM4jid.s 			page 3
 
 
   89:Core/Src/main.c **** 
@@ -138,7 +138,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  103:Core/Src/main.c ****   while (1)
  104:Core/Src/main.c ****   {
  105:Core/Src/main.c **** 
- 106:Core/Src/main.c ****     HAL_Delay(1000);
+ 106:Core/Src/main.c ****     HAL_Delay(100);
  107:Core/Src/main.c ****     HAL_GPIO_TogglePin(LED4_GPIO_Port,LED4_Pin);
  108:Core/Src/main.c ****     /* USER CODE END WHILE */
  109:Core/Src/main.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  143:Core/Src/main.c ****     Error_Handler();
  144:Core/Src/main.c ****   }
  145:Core/Src/main.c **** 
-ARM GAS  /tmp/ccOP6jzo.s 			page 4
+ARM GAS  /tmp/ccZM4jid.s 			page 4
 
 
  146:Core/Src/main.c ****   /** Initializes the CPU, AHB and APB buses clocks
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  200:Core/Src/main.c ****   }
  201:Core/Src/main.c ****   /* USER CODE BEGIN TIM1_Init 2 */
  202:Core/Src/main.c **** 
-ARM GAS  /tmp/ccOP6jzo.s 			page 5
+ARM GAS  /tmp/ccZM4jid.s 			page 5
 
 
  203:Core/Src/main.c ****   /* USER CODE END TIM1_Init 2 */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  257:Core/Src/main.c ****   huart2.Init.WordLength = UART_WORDLENGTH_8B;
  258:Core/Src/main.c ****   huart2.Init.StopBits = UART_STOPBITS_1;
  259:Core/Src/main.c ****   huart2.Init.Parity = UART_PARITY_NONE;
-ARM GAS  /tmp/ccOP6jzo.s 			page 6
+ARM GAS  /tmp/ccZM4jid.s 			page 6
 
 
  260:Core/Src/main.c ****   huart2.Init.Mode = UART_MODE_TX_RX;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
   58 001a 1A63     		str	r2, [r3, #48]
   59              		.loc 1 283 3 view .LVU6
   60 001c 1A6B     		ldr	r2, [r3, #48]
-ARM GAS  /tmp/ccOP6jzo.s 			page 7
+ARM GAS  /tmp/ccZM4jid.s 			page 7
 
 
   61 001e 02F00102 		and	r2, r2, #1
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  105              	.LVL1:
  294:Core/Src/main.c **** 
  295:Core/Src/main.c ****   /*Configure GPIO pins : LED1_Pin LED2_Pin LED3_Pin LED4_Pin */
-ARM GAS  /tmp/ccOP6jzo.s 			page 8
+ARM GAS  /tmp/ccZM4jid.s 			page 8
 
 
  296:Core/Src/main.c ****   GPIO_InitStruct.Pin = LED1_Pin|LED2_Pin|LED3_Pin|LED4_Pin;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  310:Core/Src/main.c ****   * @retval None
  311:Core/Src/main.c ****   */
  312:Core/Src/main.c **** void Error_Handler(void)
-ARM GAS  /tmp/ccOP6jzo.s 			page 9
+ARM GAS  /tmp/ccZM4jid.s 			page 9
 
 
  313:Core/Src/main.c **** {
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
   41:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ASM                                  __asm
   42:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   43:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __INLINE
-ARM GAS  /tmp/ccOP6jzo.s 			page 10
+ARM GAS  /tmp/ccZM4jid.s 			page 10
 
 
   44:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __INLINE                               inline
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
   98:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
   99:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
  100:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
-ARM GAS  /tmp/ccOP6jzo.s 			page 11
+ARM GAS  /tmp/ccZM4jid.s 			page 11
 
 
  101:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  317:Core/Src/main.c ****   while (1)
  170              		.loc 1 317 3 discriminator 1 view .LVU37
  318:Core/Src/main.c ****   {
-ARM GAS  /tmp/ccOP6jzo.s 			page 12
+ARM GAS  /tmp/ccZM4jid.s 			page 12
 
 
  319:Core/Src/main.c ****   }
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  181:Core/Src/main.c ****   htim1.Init.Period = 1000;
  216              		.loc 1 181 3 is_stmt 1 view .LVU49
  181:Core/Src/main.c ****   htim1.Init.Period = 1000;
-ARM GAS  /tmp/ccOP6jzo.s 			page 13
+ARM GAS  /tmp/ccZM4jid.s 			page 13
 
 
  217              		.loc 1 181 26 is_stmt 0 view .LVU50
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  253 0044 0093     		str	r3, [sp]
  196:Core/Src/main.c ****   if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
  254              		.loc 1 196 3 is_stmt 1 view .LVU69
-ARM GAS  /tmp/ccOP6jzo.s 			page 14
+ARM GAS  /tmp/ccZM4jid.s 			page 14
 
 
  196:Core/Src/main.c ****   if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  302              		.loc 1 213 1 view -0
  303              		.cfi_startproc
  304              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccOP6jzo.s 			page 15
+ARM GAS  /tmp/ccZM4jid.s 			page 15
 
 
  305              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  341              		.loc 1 230 7 is_stmt 0 view .LVU96
  342 001e FFF7FEFF 		bl	HAL_UART_Init
  343              	.LVL9:
-ARM GAS  /tmp/ccOP6jzo.s 			page 16
+ARM GAS  /tmp/ccZM4jid.s 			page 16
 
 
  230:Core/Src/main.c ****   {
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  258:Core/Src/main.c ****   huart2.Init.Parity = UART_PARITY_NONE;
  390              		.loc 1 258 3 is_stmt 1 view .LVU107
  258:Core/Src/main.c ****   huart2.Init.Parity = UART_PARITY_NONE;
-ARM GAS  /tmp/ccOP6jzo.s 			page 17
+ARM GAS  /tmp/ccZM4jid.s 			page 17
 
 
  391              		.loc 1 258 24 is_stmt 0 view .LVU108
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  434              	.LFB131:
  120:Core/Src/main.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
  435              		.loc 1 120 1 view -0
-ARM GAS  /tmp/ccOP6jzo.s 			page 18
+ARM GAS  /tmp/ccZM4jid.s 			page 18
 
 
  436              		.cfi_startproc
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  479              	.LBB9:
  127:Core/Src/main.c **** 
  480              		.loc 1 127 3 view .LVU134
-ARM GAS  /tmp/ccOP6jzo.s 			page 19
+ARM GAS  /tmp/ccZM4jid.s 			page 19
 
 
  481 0030 0293     		str	r3, [sp, #8]
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  138:Core/Src/main.c ****   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
  518              		.loc 1 138 30 is_stmt 0 view .LVU152
  519 005a 5023     		movs	r3, #80
-ARM GAS  /tmp/ccOP6jzo.s 			page 20
+ARM GAS  /tmp/ccZM4jid.s 			page 20
 
 
  520 005c 1193     		str	r3, [sp, #68]
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  555              		.loc 1 155 7 is_stmt 0 view .LVU171
  556 007e 03A8     		add	r0, sp, #12
  557 0080 FFF7FEFF 		bl	HAL_RCC_ClockConfig
-ARM GAS  /tmp/ccOP6jzo.s 			page 21
+ARM GAS  /tmp/ccZM4jid.s 			page 21
 
 
  558              	.LVL15:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
   86:Core/Src/main.c **** 
  608              		.loc 1 86 3 view .LVU178
  609 0006 FFF7FEFF 		bl	SystemClock_Config
-ARM GAS  /tmp/ccOP6jzo.s 			page 22
+ARM GAS  /tmp/ccZM4jid.s 			page 22
 
 
  610              	.LVL19:
@@ -1283,22 +1283,22 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  624              		.loc 1 103 3 discriminator 1 view .LVU183
  106:Core/Src/main.c ****     HAL_GPIO_TogglePin(LED4_GPIO_Port,LED4_Pin);
  625              		.loc 1 106 5 discriminator 1 view .LVU184
- 626 001a 4FF47A70 		mov	r0, #1000
- 627 001e FFF7FEFF 		bl	HAL_Delay
+ 626 001a 6420     		movs	r0, #100
+ 627 001c FFF7FEFF 		bl	HAL_Delay
  628              	.LVL24:
  107:Core/Src/main.c ****     /* USER CODE END WHILE */
  629              		.loc 1 107 5 discriminator 1 view .LVU185
- 630 0022 4FF48041 		mov	r1, #16384
- 631 0026 0248     		ldr	r0, .L40
- 632 0028 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 630 0020 4FF48041 		mov	r1, #16384
+ 631 0024 0148     		ldr	r0, .L40
+ 632 0026 FFF7FEFF 		bl	HAL_GPIO_TogglePin
  633              	.LVL25:
  103:Core/Src/main.c ****   {
  634              		.loc 1 103 9 discriminator 1 view .LVU186
- 635 002c F5E7     		b	.L38
+ 635 002a F6E7     		b	.L38
  636              	.L41:
- 637 002e 00BF     		.align	2
+ 637              		.align	2
  638              	.L40:
- 639 0030 000C0240 		.word	1073875968
+ 639 002c 000C0240 		.word	1073875968
  640              		.cfi_endproc
  641              	.LFE130:
  643              		.global	huart2
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  655              		.set	.LANCHOR1,. + 0
  658              	huart1:
  659 0000 00000000 		.space	68
-ARM GAS  /tmp/ccOP6jzo.s 			page 23
+ARM GAS  /tmp/ccZM4jid.s 			page 23
 
 
  659      00000000 
@@ -1349,37 +1349,37 @@ ARM GAS  /tmp/ccOP6jzo.s 			page 1
  679              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
  680              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
  681              		.file 15 "<built-in>"
-ARM GAS  /tmp/ccOP6jzo.s 			page 24
+ARM GAS  /tmp/ccZM4jid.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/ccOP6jzo.s:20     .text.MX_GPIO_Init:0000000000000000 $t
-     /tmp/ccOP6jzo.s:25     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-     /tmp/ccOP6jzo.s:133    .text.MX_GPIO_Init:0000000000000074 $d
-     /tmp/ccOP6jzo.s:140    .text.Error_Handler:0000000000000000 $t
-     /tmp/ccOP6jzo.s:146    .text.Error_Handler:0000000000000000 Error_Handler
-     /tmp/ccOP6jzo.s:178    .text.MX_TIM1_Init:0000000000000000 $t
-     /tmp/ccOP6jzo.s:183    .text.MX_TIM1_Init:0000000000000000 MX_TIM1_Init
-     /tmp/ccOP6jzo.s:289    .text.MX_TIM1_Init:0000000000000064 $d
-     /tmp/ccOP6jzo.s:295    .text.MX_USART1_UART_Init:0000000000000000 $t
-     /tmp/ccOP6jzo.s:300    .text.MX_USART1_UART_Init:0000000000000000 MX_USART1_UART_Init
-     /tmp/ccOP6jzo.s:355    .text.MX_USART1_UART_Init:000000000000002c $d
-     /tmp/ccOP6jzo.s:361    .text.MX_USART2_UART_Init:0000000000000000 $t
-     /tmp/ccOP6jzo.s:366    .text.MX_USART2_UART_Init:0000000000000000 MX_USART2_UART_Init
-     /tmp/ccOP6jzo.s:421    .text.MX_USART2_UART_Init:000000000000002c $d
-     /tmp/ccOP6jzo.s:427    .text.SystemClock_Config:0000000000000000 $t
-     /tmp/ccOP6jzo.s:433    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/ccOP6jzo.s:581    .text.SystemClock_Config:0000000000000094 $d
-     /tmp/ccOP6jzo.s:587    .text.main:0000000000000000 $t
-     /tmp/ccOP6jzo.s:593    .text.main:0000000000000000 main
-     /tmp/ccOP6jzo.s:639    .text.main:0000000000000030 $d
-     /tmp/ccOP6jzo.s:665    .bss.huart2:0000000000000000 huart2
-     /tmp/ccOP6jzo.s:658    .bss.huart1:0000000000000000 huart1
-     /tmp/ccOP6jzo.s:651    .bss.htim1:0000000000000000 htim1
-     /tmp/ccOP6jzo.s:647    .bss.htim1:0000000000000000 $d
-     /tmp/ccOP6jzo.s:654    .bss.huart1:0000000000000000 $d
-     /tmp/ccOP6jzo.s:661    .bss.huart2:0000000000000000 $d
+     /tmp/ccZM4jid.s:20     .text.MX_GPIO_Init:0000000000000000 $t
+     /tmp/ccZM4jid.s:25     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+     /tmp/ccZM4jid.s:133    .text.MX_GPIO_Init:0000000000000074 $d
+     /tmp/ccZM4jid.s:140    .text.Error_Handler:0000000000000000 $t
+     /tmp/ccZM4jid.s:146    .text.Error_Handler:0000000000000000 Error_Handler
+     /tmp/ccZM4jid.s:178    .text.MX_TIM1_Init:0000000000000000 $t
+     /tmp/ccZM4jid.s:183    .text.MX_TIM1_Init:0000000000000000 MX_TIM1_Init
+     /tmp/ccZM4jid.s:289    .text.MX_TIM1_Init:0000000000000064 $d
+     /tmp/ccZM4jid.s:295    .text.MX_USART1_UART_Init:0000000000000000 $t
+     /tmp/ccZM4jid.s:300    .text.MX_USART1_UART_Init:0000000000000000 MX_USART1_UART_Init
+     /tmp/ccZM4jid.s:355    .text.MX_USART1_UART_Init:000000000000002c $d
+     /tmp/ccZM4jid.s:361    .text.MX_USART2_UART_Init:0000000000000000 $t
+     /tmp/ccZM4jid.s:366    .text.MX_USART2_UART_Init:0000000000000000 MX_USART2_UART_Init
+     /tmp/ccZM4jid.s:421    .text.MX_USART2_UART_Init:000000000000002c $d
+     /tmp/ccZM4jid.s:427    .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccZM4jid.s:433    .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccZM4jid.s:581    .text.SystemClock_Config:0000000000000094 $d
+     /tmp/ccZM4jid.s:587    .text.main:0000000000000000 $t
+     /tmp/ccZM4jid.s:593    .text.main:0000000000000000 main
+     /tmp/ccZM4jid.s:639    .text.main:000000000000002c $d
+     /tmp/ccZM4jid.s:665    .bss.huart2:0000000000000000 huart2
+     /tmp/ccZM4jid.s:658    .bss.huart1:0000000000000000 huart1
+     /tmp/ccZM4jid.s:651    .bss.htim1:0000000000000000 htim1
+     /tmp/ccZM4jid.s:647    .bss.htim1:0000000000000000 $d
+     /tmp/ccZM4jid.s:654    .bss.huart1:0000000000000000 $d
+     /tmp/ccZM4jid.s:661    .bss.huart2:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

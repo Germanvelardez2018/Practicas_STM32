@@ -103,7 +103,7 @@ int main(void)
   while (1)
   {
 
-    HAL_Delay(1000);
+    HAL_Delay(100);
     HAL_GPIO_TogglePin(LED4_GPIO_Port,LED4_Pin);
     /* USER CODE END WHILE */
 
