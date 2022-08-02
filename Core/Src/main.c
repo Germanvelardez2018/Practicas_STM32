@@ -96,6 +96,10 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
+//Llamo a la funcion que inicia el timmer (Activando IRQ) 
+  HAL_TIM_Base_Start_IT(&htim1);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -104,7 +108,6 @@ int main(void)
   {
 
     HAL_Delay(1000);
-    HAL_GPIO_TogglePin(LED4_GPIO_Port,LED4_Pin);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -302,6 +305,15 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+// Callback
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+  HAL_GPIO_TogglePin(LED4_GPIO_Port,LED4_Pin);
+
+  
+}
+
+
+
 
 /* USER CODE END 4 */
 
