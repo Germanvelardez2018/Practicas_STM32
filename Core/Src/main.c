@@ -21,11 +21,17 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <string.h>
+#include <stdio.h>
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+
+// Utilizado para el contador
+static uint32_t counter = 0;
+
 
 /* USER CODE END PTD */
 
@@ -61,6 +67,9 @@ static void MX_USART2_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+char buffer[100]={0};
+
+
 /* USER CODE END 0 */
 
 /**
@@ -70,7 +79,7 @@ static void MX_USART2_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -103,8 +112,13 @@ int main(void)
   while (1)
   {
 
-    HAL_Delay(100);
     HAL_GPIO_TogglePin(LED4_GPIO_Port,LED4_Pin);
+
+    
+    sprintf(buffer,"counter:%d \r\n",counter);
+    HAL_UART_Transmit(&huart2,buffer,strlen(buffer),1000);
+    HAL_Delay(1000);
+    counter ++;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
